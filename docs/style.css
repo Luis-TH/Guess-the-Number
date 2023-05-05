@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"); /* Importo una fuente de Google */
+
+* {
+  /* Estilo a todo el DOM */
+  margin: 0; /* Sin Margen el DOM, todo quedo Arriba a la Izquierda */
+  padding: 0; /* Sin Padding, todo quedo arriba a la izquierda */
+  box-sizing: inherit; /* Tamaño de las Cajas sera personalizado, lo que le demos es lo que nos va a dar */
+}
+
+html {
+  /* A toda la etiqueta html en el DOM */
+  font-size: 62.5%; /* Le cambio el tamaño de fuente a todo el elemento html */
+  box-sizing: border-box; /* Significa que el tamaño que asignemos se va a mantener aunque le ponga padding y margin */
+}
+
+body {
+  /* A toda la etiqueta body en el DOM */
+  font-family: "Press Start 2P", sans-serif; /* Utilizo la fuente que importe */
+  color: #eee; /* A todo el body le pongo un color blanco, pero al texto */
+  background-color: #222; /* Le pongo un fondo negro a toda la pagina */
+}
+
+header {
+  /* A la etiqueta header */
+  position: relative; /* Que tome el posicionamiento del body */
+  height: 35vh; /* Le asigno un alto al header */
+  border-bottom: 7px solid #eee; /* El borde inferior, mide 7px, es del estilo solid y su color es blanco/aperlado */
+}
+
+main {
+  /* La seccion que contiene el selector de ambos lados */
+  height: 65vh; /* Esto es la altura */
+  color: #eee; /* Este es el color del texto */
+  display: flex; /* Para poder colocar los elementos donde quisiera y que los section sean independientes */
+  align-items: center; /* Loe items centrados, pero tanto de eje x y y */
+  justify-content: space-around; /* Para que tomen su espacio a cada lado */
+}
+
+.izquierda {
+  /* Esta es una clase en una etiqueta del selector */
+  width: 52rem; /* Le asigno un tamaño al selector izquierdo */
+  display: flex; /* Para poderlo mover aqui y ajustar su anchura como quiera */
+  flex-direction: column; /* Que ocupe todo el espacio, porque va a ser como columna */
+  align-items: center; /* Centro este elemento al centro */
+}
+
+.derecha {
+  /* Una clase de una etiqueta Section */
+  width: 52rem; /* Le damos un tamaño al elemento */
+  font-size: 2rem; /* Aumentamos el tamaño de texto */
+}
+
+h1 {
+  /* A todos los elementos h1 */
+  font-size: 4rem; /* Le cambio el tamaño al texto */
+  text-align: center; /* Centramos el texto */
+  position: absolute; /* El elemento se puede mover en todo este elemento */
+  width: 100%; /* Que ocupe toda la anchura este elemento */
+  top: 52%; /* Espacio de arriba hacia abajo */
+  left: 50%; /* Esta super a la derecha el elemento */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* El elemento lo centro mas a la izquierda y tambien lo pongo mas arriba */
+}
+
+.numero {
+  /* A la clase numero, que es una etiqueta div */
+  background: #eee; /* Le damos un fondo blanco */
+  color: #333; /* Que el signo de ? sea color blanco */
+  font-size: 6rem; /* Hacemos mas grande la tipografia */
+  width: 15rem; /* Le asignamos un ancho */
+  padding: 3rem 0rem; /* Le asignamos un padding al elemento, que es de adentro hacia afuera, luego lo dejamos en 0 en el eje de las y */
+  text-align: center; /* Centramos el elemento al centro */
+  position: absolute; /* Aqui sera el padre para las futuras posiciones */
+  bottom: 0; /* Lo bajo hasta abajo de toda su altura */
+  left: 50%; /* Lo pongo de la derecha a la izquierda */
+  transform: translate(
+    -50%,
+    50%
+  ); /* Lo pongo un poco mas a la izquierda y un poco mas abajo osea primero x luego y */
+}
+
+.rangoNumero {
+  /* Parrafo con una clase */
+  font-size: 1.4rem; /* Le aumento el tamaño a la tipografia */
+  position: absolute; /* Que esta clase sea el padre, y de aqui podamos posicionar elementos y colocar esto donde quiera */
+  top: 2rem; /* Espacio de arriba hacia abajo */
+  right: 2rem; /* Lo posicionamos de derecha a izquierda y le dejamos un espacio hacia la derecha */
+}
+
+.btnReinicio {
+  /* Etiqueta boton, con una clase */
+  position: relative; /* Va a estar dependiendo de la clase header el posicionamiento */
+  top: 2rem; /* Espacio de arriba hacia abajo */
+  left: 2rem; /* Espacio de la izquierda hacia la derecha */
+}
+.adivinanza {
+  /* Al input en su clase adivinanza */
+  background: none; /* Sin ningun color de fondo */
+  border: 4px solid #eee; /* Borde del emento color blanco */
+  font-family: inherit; /* Tipografia del input */
+  color: inherit; /* Color de las letras */
+  font-size: 5rem; /* Le cambio el tamaño de texto dentro de la caja */
+  padding: 2.5rem; /* Le aumentamos el tamaño a la caja del input */
+  width: 25rem; /* Anchura del input */
+  text-align: center; /* Texto centrado al medio */
+  display: block; /* Que se comporte como un bloque */
+  margin-bottom: 3rem; /* Margen que subimos de abajo hacia arriba */
+}
+
+.btn {
+  /* Personalizamos la etiqueta button que contiene la clase .btn */
+  border: none; /* Que no contenga ningun borde */
+  background-color: #eee; /* Le damos un fondo blanco al boton */
+  color: #222; /* Que las letras sean color negro */
+  font-size: 2rem; /* Le aumentamos el tamaño de la tipografia */
+  font-family: inherit; /* El tipo de tipografia es la que traemos de google fonts */
+  padding: 2rem 3rem; /* Espacio del elemento de dentro hacia afuera un poco mas largo hacia la derecha */
+  cursor: pointer; /* Que cuando le ponga el cursor salga una manita */
+}
+
+.btn:hover {
+  /* A la etiqueta button, cuando le pasemos el mouse */
+  background-color: #ccc; /* El color se va a a hacer un poco mas gris */
+}
+
+.mensaje {
+  /* Parrafo con la clase mensaje, que dice el texto "Comienza a Adivinar... */
+  margin-bottom: 8rem; /* Espacio hacia abajo del texto */
+  height: 3rem; /* Le asigno un poco mas de altura */
+}
+
+.etiquetaPuntaje {
+  /* Etiqueta parrafo, con un texto, que contiene texto dentro de una etiqueta span */
+  margin-bottom: 2rem; /* Le damos un margen inferior */
+}

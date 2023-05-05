@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Ya enlace el CSS, este lo pongo mas arriba -->
+    <title>Numero Secreto</title>
+    <!-- Titulo -->
+  </head>
+  <body>
+    <!-- Cuerpo en el DOM -->
+    <header>
+      <!-- Etiqueta Header en el DOM -->
+      <h1>Adivina el Numero!</h1>
+      <!-- Es un titulo en el DOM -->
+      <p class="rangoNumero">(Numero entre 1 y 20)</p>
+      <!-- Etiqueta p con una clase -->
+      <button class="btn btnReinicio">Reinicio!</button>
+      <!-- Es una etiqueta button con una clase -->
+      <div class="numero">?</div>
+      <!-- No es Mas que una division y le puse un texto -->
+    </header>
+    <!-- Aqui termino la cabecera -->
+    <main>
+      <!-- Etiqueta donde puedo colocar lo que necesito en el DOM -->
+      <section class="izquierda">
+        <!-- Solo es una seccion mas -->
+        <input type="number" class="adivinanza" />
+        <!-- Etiqueta que recibe un numero y tiene una clase -->
+        <button class="btn btnRevisa">Revisa!</button>
+      </section>
+      <section class="derecha">
+        <!-- Una etiqueta de seccion con una clase -->
+        <p class="mensaje">Comienza a Adivinar...</p>
+        <!-- Un elemento parrafo, con una clase y un texto -->
+        <p class="etiquetaPuntaje">
+          💯 Puntaje: <span class="puntaje">20</span>
+        </p>
+        <!-- Un parrafo, con una clase, un texto, dentro un span con una clase y texto -->
+        <p class="etiquetaPuntajeMaximo">
+          🏅 Puntaje mas Alto: <span class="puntajeMaximo">0</span>
+        </p>
+        <!-- Es un parrafo con una clase, dentro un texto dentro otro span con una clase y texto -->
+      </section>
+    </main>
+    <script src="script.js"></script>
+    <!-- Enlace al Archivo Logico -->
+  </body>
+</html>
